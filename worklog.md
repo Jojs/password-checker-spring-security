@@ -1,4 +1,4 @@
-2017-04-08 20:30 - Does a password strength checker help? 
+2017-04-08 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
 Summarising initial research and previous experience after a talk with a friend about passwords and security triggede the question
 "Does a password strength checker help?"
 Googling this the answer seems to be "yes, because it makes the user think more". Nevertheless some are better than others,
