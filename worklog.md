@@ -39,5 +39,14 @@ implementation and a standalone REST service for use with for instance mobile ap
 https://iamfortress.net/2015/02/16/apache-fortress-end-to-end-security-tutorial/
 
 
-2017-10-04 21:30-
-Initial code structure
+2017-10-04 21:30-22.30
+Initial code structure. 
+Starting with this: https://spring.io/guides/tutorials/spring-security-and-angular-js/
+Run the server Command-line: mvn spring-boot:run
+Or run the main method in UIApplication.java
+$ mvn package
+$ java -jar target/*.jar
+
+Using wro4j for packaging AngularJS, etc. because I am not a hard-core front end developer. Real world would use a node-based toolchain.
+
+
