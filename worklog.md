@@ -37,3 +37,7 @@ as Kerberos server and SASL integrations. I combine it with Apache Fortress to g
 role based access control (RBAC) system for managing permissions in the application. Fortress also comes with a JavaEE REALM
 implementation and a standalone REST service for use with for instance mobile apps and SPA's.
 https://iamfortress.net/2015/02/16/apache-fortress-end-to-end-security-tutorial/
+
+
+2017-10-04 21:30-
+Initial code structure
