@@ -1,4 +1,4 @@
-2017-04-08 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
+2017-08-04 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
 Summarising initial research and previous experience after a talk with a friend about passwords and security triggede the question
 "Does a password strength checker help?"
 Googling this the answer seems to be "yes, because it makes the user think more". Nevertheless some are better than others,
@@ -37,3 +37,18 @@ as Kerberos server and SASL integrations. I combine it with Apache Fortress to g
 role based access control (RBAC) system for managing permissions in the application. Fortress also comes with a JavaEE REALM
 implementation and a standalone REST service for use with for instance mobile apps and SPA's.
 https://iamfortress.net/2015/02/16/apache-fortress-end-to-end-security-tutorial/
+
+
+2017-10-04 21:30-22.30
+Initial code structure. 
+Starting with this: https://spring.io/guides/tutorials/spring-security-and-angular-js/
+Run the server Command-line: mvn spring-boot:run
+Or run the main method in UIApplication.java
+$ mvn package
+$ java -jar target/*.jar
+
+Using wro4j for packaging AngularJS, etc. because I am not a hard-core front end developer. Real world would use a node-based toolchain.
+
+2017-04-11 13.15-14.00
+Continue initial setup. Switching from basic auth to form-based
+
