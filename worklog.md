@@ -1,4 +1,4 @@
-2017-04-08 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
+2017-08-04 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
 Summarising initial research and previous experience after a talk with a friend about passwords and security triggede the question
 "Does a password strength checker help?"
 Googling this the answer seems to be "yes, because it makes the user think more". Nevertheless some are better than others,
@@ -49,4 +49,6 @@ $ java -jar target/*.jar
 
 Using wro4j for packaging AngularJS, etc. because I am not a hard-core front end developer. Real world would use a node-based toolchain.
 
+2017-04-11 13.15-14.00
+Continue initial setup. Switching from basic auth to form-based
 
