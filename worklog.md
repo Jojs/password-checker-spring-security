@@ -1,18 +1,24 @@
-2017-08-04 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help? 
+2017-08-04 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help?
+
 Summarising initial research and previous experience after a talk with a friend about passwords and security triggede the question
 "Does a password strength checker help?"
+
 Googling this the answer seems to be "yes, because it makes the user think more". Nevertheless some are better than others,
 so in this project I am going to test a few and eventually combine their strengths. A good checker needs access to a 
 dictionary so an ajax call to the server will be used to further check password strength.
+
 I will base it on this result: http://password-policy-testing.wikidot.com/results
+
 Because this research is from ultimo 2014 I recommend that up-to-date research must be done before applying this 
 in production today.
 
 It is clear that that a very big responsibility lies with the service provider which have to protect against both 
 online and offline attacs.
-A summary of research (2014) about this can seen here: 
-https://nakedsecurity.sophos.com/2014/10/24/do-we-really-need-strong-passwords/
+
+A summary of research (2014) about this can seen here: https://nakedsecurity.sophos.com/2014/10/24/do-we-really-need-strong-passwords/
+
 Online attacks can be deflected with ip-bans, one hour locking of an account after three failed attempts, etc.
+
 Offline attacks only happens if the malicious person gets direct access to data - so any physical or remote access must be
 properly secured. This can be difficult when sensitive data is stored together with an applications general 
 data and running instances. Because a running applcation often needs to be serviceable by support and technical personel, etc. 
@@ -20,11 +26,13 @@ and often multiple integrations with other systems are required, it opens up to 
 data in a separate runtime and preferably physical system helps in simplifying the task of securing and restricting access
 and allows for procedures, passwords, etc. that can be completely different from the standards applied to the
 main application.
+
 A data breach can still happen but passwords are only relevant in the time between decryption and until an admin discovers the 
 breach and have resetall users passwords. To make it difficult and time consuming to decrypt passwords they should be 
 individually hashed with a time and RAM consuming key derivation function such as PBKDF2 
 (https://en.wikipedia.org/wiki/PBKDF2, also read critics), 
 bcrypt, scrypt and Argon2 (https://en.wikipedia.org/wiki/Argon2)
+
 No matter what, users have a tendency to use the same combination of email, username and password on other sides, so I think
 it is very important to warn users about that risk when they are alerted about the reset of their passwords. I conclude that
 together with all other security measures, is important to have procedures and mechanisms in place to quickly reset 
@@ -41,14 +49,39 @@ https://iamfortress.net/2015/02/16/apache-fortress-end-to-end-security-tutorial/
 
 2017-10-04 21:30-22.30
 Initial code structure. 
+
 Starting with this: https://spring.io/guides/tutorials/spring-security-and-angular-js/
-Run the server Command-line: mvn spring-boot:run
+
+Run the server Command-line: 
+`mvn spring-boot:run`
+
 Or run the main method in UIApplication.java
+```
 $ mvn package
 $ java -jar target/*.jar
+```
 
 Using wro4j for packaging AngularJS, etc. because I am not a hard-core front end developer. Real world would use a node-based toolchain.
 
+
 2017-04-11 13.15-14.00
+
 Continue initial setup. Switching from basic auth to form-based
+
+
+
+2017-04-12 20:45-22:30
+
+Contemplating scaling:
+
+Split into resource server and UI server  - Use API Gateway pattern where UI server is reverse proxy. Use Spring Cloud for Proxy.
+
+Mix with OAuth2 server.
+
+Lots of nice stuff in the tutorial - but for another day where it is fun to run multiple servers.
+
+
+2017-10-04 19:45 
+Hibernate initialisation
+
 
