@@ -1,4 +1,4 @@
-2017-08-04 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help?
+2017-04-08 20:30-22.15 (plus on hour research earlier) - Does a password strength checker help?
 
 Summarising initial research and previous experience after a talk with a friend about passwords and security triggede the question
 "Does a password strength checker help?"
@@ -47,7 +47,7 @@ implementation and a standalone REST service for use with for instance mobile ap
 https://iamfortress.net/2015/02/16/apache-fortress-end-to-end-security-tutorial/
 
 
-2017-10-04 21:30-22.30
+2017-04-10 21:30-22.30
 Initial code structure. 
 
 Starting with this: https://spring.io/guides/tutorials/spring-security-and-angular-js/
@@ -81,7 +81,28 @@ Mix with OAuth2 server.
 Lots of nice stuff in the tutorial - but for another day where it is fun to run multiple servers.
 
 
-2017-10-04 19:45 
+2017-04-15 19:45-22.45
+
 Hibernate initialisation
+
+http://docs.spring.io/spring/docs/current/spring-framework-reference/html/orm.html
+
+Stuck in @Autowire of sessionFactory
+
+2017-04-16 19:30-22.30
+
+Stuck in @Autowire of sessionFactory
+
+2017-04-17 09:30-11.00
+
+Switching to clean JPA setup. https://stackoverflow.com/questions/37704414/spring-boot-hibernate-5-integration-error/37718079#37718079
+
+Examining the different settings in application-properties.
+
+2017-04-17 11.00-11.30
+
+Commit, push, pull request 
+
+
 
 
